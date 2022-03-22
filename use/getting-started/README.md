@@ -5,6 +5,6 @@ description: >-
   platform.
 ---
 
-# 🚀 Getting started
+# Getting started
 
 If you have never used FlatQube or other DEXes, we highly recommend devoting some time to reading the tips inside.

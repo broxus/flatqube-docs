@@ -4,6 +4,6 @@ description: >-
   use it
 ---
 
-# 🏗 Token builder
+# Token builder
 
 B

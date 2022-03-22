@@ -4,5 +4,5 @@ description: >-
   this section to learn everything about swaps at FlatQube.
 ---
 
-# 💱 Swap
+# Swap
 

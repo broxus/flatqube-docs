@@ -5,7 +5,7 @@ description: >-
   platform.
 ---
 
-# 👋 Welcome to FlatQube
+# Welcome to FlatQube
 
 FlatQube DEX, developed by [Broxus](https://broxus.com), is a decentralized digital asset exchange providing users with a convenient means of exchanging their cryptocurrency. The DEX also provides users with plenty of passive income options through its farming and staking mechanisms. Its underlying network, Everscale, is making decentralized finance (DeFi) an affordable yet inclusive space for all.
 

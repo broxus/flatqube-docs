@@ -1,2 +1,2 @@
-# 📊 Pools
+# Pools
 

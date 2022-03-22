@@ -4,5 +4,5 @@ description: >-
   earn by providing liquidity.
 ---
 
-# 🚜 Farming
+# Farming
 
