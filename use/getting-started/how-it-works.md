@@ -4,7 +4,7 @@ description: Learn the basics of FlatQube to better understand the underlying pr
 
 # How it works
 
-## Basics&#x20;
+## Basics
 
 FlatQube is an automated liquidity protocol inspired by the leading market solutions. It is based on a constant product formula and offers a non-custodial, decentralized, censorship-resistant and secure way to provide liquidity and exchange pairs of tokens.
 
@@ -32,6 +32,6 @@ FlatQube supports one-sided liquidity provision by automatically exchanging the 
 
 Pairs act as automated market makers, standing ready to accept one token for the other as long as the “constant product” formula is preserved. This formula, most simply expressed as `x * y = k`, states that trades must not change the product (`k`) of a pair’s reserve balances (`x` and `y`). Because `k` remains unchanged from the reference frame of a trade, it is often referred to as the _invariant_. This formula has the desirable property that larger trades (relative to reserves) execute at exponentially worse rates than smaller ones.
 
-In practice, FlatQube applies a 0.30% fee to trades, which increases the reserves and, consequently, the invariant. It serves as a deferred profit to LPs, which they get when they burn pool tokens to withdraw the portion of total reserves.
+In practice, FlatQube applies a 0.30% fee to trades, which increases the reserves and, consequently, the invariant. It serves as a deferred profit to LPs, which they get when they burn pool tokens to withdraw their portion of the total reserves.
 
 By design, the relative price of assets changes only through trading, leading to arbitrage opportunities. This mechanism ensures that DEX prices always trend toward a market-clearing price.

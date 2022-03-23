@@ -12,8 +12,8 @@ Go to the Swap section and [connect your wallet](../../getting-started/how-to-co
 
 ![](<../../../.gitbook/assets/image (19).png>)
 
-In the upper right part of the swap window, you can see a gear⚙️**.** This is **Transaction Settings.**\
-****Here you can set **slippage tolerance:**
+In the upper-right part of the swap window, you can see a gear⚙️\*\*.\*\* This is a link to **Transaction Settings.**\
+\*\*\*\*Here you can set **slippage tolerance:**
 
 ![](<../../../.gitbook/assets/image (129).png>)
 
@@ -24,4 +24,3 @@ You can choose one of the offered percentages, or enter it manually:
 When making a swap, you will see that the **Slippage tolerance** will change:
 
 ![](<../../../.gitbook/assets/image (214).png>)
-

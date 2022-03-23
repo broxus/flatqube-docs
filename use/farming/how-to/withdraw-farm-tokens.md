@@ -1,15 +1,15 @@
 # Withdraw farm tokens
 
-In order to withdraw your farming LP tokens from the farming pool, go to the [**farming page**](../interface/farm-page-user/) of the required [**pool**](../interface/farming-pools.md)**.** \
-The total number of your locked farming tokens in this pool and their dollar equivalent are displayed in the <mark style="color:orange;">**Farming balance block**</mark>.&#x20;
+In order to withdraw your farming LP tokens from the farming pool, go to the [**farming page**](../interface/farm-page-user/) of the required [**pool**](../interface/farming-pools.md)**.**\
+The total number of your locked farming tokens in this pool and their dollar equivalent are displayed in the <mark style="color:orange;">**Farming balance block**</mark>.
 
 ![](<../../../.gitbook/assets/image (89).png>)
 
-## How to withdrar farming tokens
+## How to withdraw farming tokens
 
-In the <mark style="color:green;">**Withdraw block**</mark>, select **Withdraw LP tokens**.&#x20;
+In the <mark style="color:green;">**Withdraw block**</mark>, select **Withdraw LP tokens**.
 
-Enter the amount of farming tokens you want to withdraw and click **Withdraw**.&#x20;
+Enter the amount of farming tokens you want to withdraw and click **Withdraw**.
 
 ![](<../../../.gitbook/assets/image (170).png>)
 

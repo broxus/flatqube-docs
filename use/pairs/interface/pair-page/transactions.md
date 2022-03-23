@@ -4,9 +4,9 @@ At the bottom of the **Pair** page is the Transactions block. All transactions a
 
 This block displays all transactions associated with this pair.
 
-On the right side of this block, you can sort transactions by <mark style="color:orange;">their type</mark>: \
-**Swaps** - exchange of the left token of the pair for the right one or vice versa \
-**Adds** - adding liquidity to the pool of this pair \
+On the right side of this block, you can sort transactions by <mark style="color:orange;">their type</mark>:\
+**Swaps** - exchanges of the left token of the pair for the right one or vice versa\
+**Adds** - adding liquidity to the pool of this pair\
 **Removes** - removing liquidity from the pool of this pair
 
 ![](<../../../../.gitbook/assets/image (18).png>)

@@ -2,8 +2,8 @@
 
 In order to go to the Farming pool page, you need to click on one of the pools in the [Farming section.](../../)
 
-The farming pool page displays detailed information about that pool. \
-Let's take a closer look at each block of this page using the WEVER/BRIDGE farming pool as an example.
+The farming pool page displays detailed information about that pool.\
+Let's take a closer look at each block of this page using the wEVER/BRIDGE farming pool as an example.
 
 ### [My farming performance and Farming balances](farming-perfomance-and-balances.md)
 

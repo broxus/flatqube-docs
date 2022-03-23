@@ -1,6 +1,6 @@
 # Farming pools
 
-By going to the [**Farming** ](../concepts/yield-farming.md)section, you will find yourself on a page with a list of currently available Farming pools. \
+By going to the [**Farming** ](../concepts/yield-farming.md)section, you will find yourself on a page with a list of currently available Farming pools.\
 If you previously [added liquidity](../how-to/deposit-farm-tokens.md) to one of the farming pools, then this pool will be displayed in the Favorite pools block.
 
 This page also displays various columns with farm pool information:
@@ -13,12 +13,12 @@ This page also displays various columns with farm pool information:
 
 **APR** is the annual profit that this pool brings.
 
-**Share** - your share in the farming pool. This is the percentage of TVL that your locked liquidity is.\
-At the same time, Share also means the percentage of the reward that you will receive every unit of time.
+**Share** is your share in the farming pool. This is the percentage of the TVL that your locked liquidity constitutes.\
+At the same time, Share also means the percentage of the reward that you will receive for every unit of time.
 
-**Your reward** - the reward available for the [claim](../how-to/claim-reward.md).
+**Your reward** is the reward available for the [claim](../how-to/claim-reward.md).
 
-**Entitled reward** - a reward that is in the [vesting](../concepts/vesting.md).
+**Entitled reward** is a reward that is in the [vesting](../concepts/vesting.md) protocol.
 
 ![](<../../../.gitbook/assets/image (174).png>)
 

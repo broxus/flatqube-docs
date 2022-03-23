@@ -10,14 +10,14 @@ Exchange operation.
 
 ## **Token**
 
-A type of crypto asset. There are two main types of tokens on FlatQube:&#x20;
+A type of crypto asset. There are two main types of tokens on FlatQube:
 
 * **Native tokens** are presented in the [**Tokens** section](../tokens/). All of them have a certain price. You can buy, sell and exchange them, as well as provide liquidity to pools through them.
 * **LP tokens** are a confirmation of the liquidity locked by the user in a certain [pool ](../pools/)and they can be used for [liquidity farming](../farming/).
 
 ## **Farming**
 
-Yield farming or liquidity mining **** is a way of earning through rewards by **providing liquidity** (as **LP tokens**) to **farming pools**.&#x20;
+Yield farming or liquidity mining \*\*\*\* is a way of earning through rewards by **providing liquidity** (as **LP tokens**) to **farming pools**.
 
 ## **Farming pool**
 
@@ -25,7 +25,7 @@ A special smart contract that distributes the provided amount proportionally to 
 
 ## **Liquidity pool**
 
-A collection of funds locked in a smart contract. Users named "**liquidity providers"** add two tokens in a certain proportion to a pool to create a market. As a confirmation of the provided liquidity, providers receive **LP tokens** that they can use in **Farming pools**.
+A collection of funds locked in a smart contract. Users called "**liquidity providers"** add two tokens in a certain proportion to a pool to create a market. As a confirmation of the provided liquidity, providers receive **LP tokens** that they can use in **Farming pools**.
 
 ## **Pair**
 
@@ -33,7 +33,7 @@ A pair of tokens that form a liquidity pool.
 
 ## **Vesting**
 
-Essentially, vesting on FlatQube is a formula for progressively unlocking  farming rewards over time.
+Essentially, vesting on FlatQube is a formula for progressively unlocking farming rewards over time.
 
 ## **Volume**
 
@@ -41,15 +41,15 @@ The trading volume (total number of exchanges) in USD for a certain period of ti
 
 ## **TVL**
 
-The total value locked - is value of assets locked by liquidity providers in a particular pool.
+The total value locked - is the value of assets locked by liquidity providers in a particular pool.
 
 ## **Account**
 
-A personal smart contract of the liquidity provider that they use to deposit tokens into the pool.
+The personal smart contract of the liquidity provider, which they use to deposit tokens into the pool.
 
 ## **Vault**
 
-A dedicated **** smart contract that stores all tokens deposited to the DEX.
+A dedicated \*\*\*\* smart contract that stores all tokens deposited to the DEX.
 
 ## **Builder**
 
@@ -61,7 +61,7 @@ A [graphic user interface](https://tonscan.io) designed to allow users to analyz
 
 A blockchain explorer is like a search engine that reveals information about the past and current state of a blockchain.
 
-Through its interface, a user can browse information about blocks that have been added to the blockchain, transactions and messages that have occurred, account balances, and information about tokens.&#x20;
+Through its interface, a user can browse information about blocks that have been added to the blockchain, transactions and messages that have occurred, account balances, and information about tokens.
 
 ## **Slippage tolerance**
 
