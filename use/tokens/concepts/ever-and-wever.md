@@ -13,6 +13,8 @@ Minting and burning takes place on the Everscale network. Anyone can mint wEVER 
 
 Use the [Wrappedever.io](https://wrappedever.io) interface to convert EVER to wEVER and vice versa.
 
+\*\*\*Now EVER can be used on FlatQube. Your default balance will now be your cumulative balance of wEVER and EVER. These tokens can be swapped for any other TIP-3.1 tokens and you can also use them individually on the DEX if you wish.&#x20;
+
 {% embed url="https://wrappedever.io" %}
 
 {% embed url="https://github.com/broxus/ton-wton" %}
