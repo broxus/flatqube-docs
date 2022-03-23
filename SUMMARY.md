@@ -108,6 +108,7 @@
 
 ## ↗ See also
 
+* [EVER Wallet](https://docs.everwallet.net)
 * [Octus Bridge](https://docs.octusbridge.io)
 * [Platform products](https://docs.broxus.com)
 * [Broxus Github](https://github.com/broxus)
