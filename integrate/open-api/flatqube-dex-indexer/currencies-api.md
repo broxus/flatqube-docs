@@ -30,7 +30,8 @@ It can be used for representing data specific to each currency in detail.
 
 ### Request parameters
 
-_Currencies parameter required - represents address of a specific currency._ \
+_Currencies parameter required - represents address of a specific currency._
+
 _Value used for testing is WEVER address: 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d_
 
 ### Response fields explanation <a href="#response-fields-explanation" id="response-fields-explanation"></a>
@@ -118,7 +119,7 @@ app.post('/currencies_usdt_prices', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/{currencies}" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="DEX all currencies info" %}
+{% swagger method="post" path="/currencies" baseUrl="https://ton-swap-indexer.broxus.com/v1" summary="DEX all currencies info" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -152,22 +153,22 @@ _Body required._ Data used for Postman tests:
 
 ### Response fields explanation
 
-| Field name             | Example value | Comment                                                    |
-| ---------------------- | ------------- | ---------------------------------------------------------- |
-| `count`                |               | number of currencies per page                              |
-| `currencies`           |               | list of all retrieved currencies with the following data:  |
-| `address`              |               | root address of the currency                               |
-| `currency`             |               | symbol of the currency                                     |
-| `fee24h`               |               | currency fees in the last 24h price: currency price in USD |
-| `priceChange`          |               | price change in the last 24h (percentage)                  |
-| `transactionsCount24h` |               | number of the transactions in the last 24h                 |
-| `tvl`                  |               | TVL (total value locked) amount (in USD)                   |
-| `tvlChange`            |               | TVL change (percentage) in the last 24h                    |
-| `volume24h`            |               | trading volume amount (in USD) in the last 24h             |
-| `volume7d`             |               | trading volume amount (in USD) in the last 7 days          |
-| `volumeChange24h`      |               | trading volume change (percentage) in the last 24h         |
-| `offset`               |               | offset                                                     |
-| `totalCount`           |               | number of all the currencies retrieved                     |
+| Field name             | Example value                                                        | Comment                                                    |
+| ---------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `count`                |                                                                      | number of currencies per page                              |
+| `currencies`           |                                                                      | list of all retrieved currencies with the following data:  |
+| `address`              | `0:b5ff077d8ac0160559bd3c945a2a824cda12ba93ae90c2697c890656d52fc7d0` | root address of the currency                               |
+| `currency`             | `MOON`                                                               | symbol of the currency                                     |
+| `fee24h`               | `2.107170214758`                                                     | currency fees in the last 24h price: currency price in USD |
+| `priceChange`          | `-14.52`                                                             | price change in the last 24h (percentage)                  |
+| `transactionsCount24h` | `18`                                                                 | number of the transactions in the last 24h                 |
+| `tvl`                  | `6304.683075841390`                                                  | TVL (total value locked) amount (in USD)                   |
+| `tvlChange`            | `-8.12`                                                              | TVL change (percentage) in the last 24h                    |
+| `volume24h`            | `713.328162545779`                                                   | trading volume amount (in USD) in the last 24h             |
+| `volume7d`             | `15925.850567579295`                                                 | trading volume amount (in USD) in the last 7 days          |
+| `volumeChange24h`      | `-34.83`                                                             | trading volume change (percentage) in the last 24h         |
+| `offset`               |                                                                      | offset                                                     |
+| `totalCount`           | `19`                                                                 | number of all the currencies retrieved                     |
 
 ### Example
 
