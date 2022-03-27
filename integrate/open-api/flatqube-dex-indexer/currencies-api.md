@@ -67,7 +67,7 @@ app.post('/currencies/:currencies', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/{currencies_usdt_prices}" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="DEX currency USD price" %}
+{% swagger method="post" path="" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="DEX currency USD price" %}
 {% swagger-description %}
 
 {% endswagger-description %}
