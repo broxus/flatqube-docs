@@ -103,7 +103,9 @@
 
 ## ⚒ Integrate
 
-* [Open API](integrate/open-api.md)
+* [Open API](integrate/open-api/README.md)
+  * [FlatQube DEX Indexer](integrate/open-api/flatqube-dex-indexer/README.md)
+    * [CMC API](integrate/open-api/flatqube-dex-indexer/cmc-api.md)
 * [Smart contracts](integrate/smart-contracts.md)
 
 ## ↗ See also
