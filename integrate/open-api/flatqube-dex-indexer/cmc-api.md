@@ -119,6 +119,8 @@ _No parameters are required._
 {% endswagger-response %}
 {% endswagger %}
 
+This function helps you get farming pools information:
+
 ### **Request parameters**
 
 _No parameters required_
@@ -157,3 +159,4 @@ app.get('/cmc/farming', (req, res) => {
     })
   })
 ```
+
