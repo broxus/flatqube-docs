@@ -29,7 +29,7 @@ Please refer to the attached Swagger schemes.
 {% hint style="info" %}
 The information below will allow you to familiarize yourself with the various function calls, as well as examples of their use.
 
-All of the API call methods below are divided into 5 sections: [CMC](./#cmc), [currencies](./#currencies), [main](./#main), [pairs ](./#pairs-section)and [transactions](./#transactions-section).
+All of the API call methods below are divided into 5 sections: [CMC](open-api.md#cmc), [currencies](open-api.md#currencies), [main](open-api.md#main), [pairs ](open-api.md#pairs-section)and [transactions](open-api.md#transactions-section).
 {% endhint %}
 
 ## Node.js code snippets
