@@ -76,4 +76,46 @@ _No parameters are required._
   })
 ```
 
-### &#x20;<a href="#response-fields-explanation" id="response-fields-explanation"></a>
+{% swagger method="get" path="/cmc/farming" baseUrl="https://ton-swap-indexer.broxus.com/v1" summary="CMC DEX farming pools info" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="Successful request" %}
+```
+{
+    "provider": "FlatQube",
+    "provider_logo": "https://flatqube.io/favicon.svg",
+    "provider_URL": "https://flatqube.io",
+    "links": [],
+    "pools": [{
+                "name": "SOON/WEVER",
+                "pair": "SOON/WEVER",
+                "pairLink": "https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3",
+                "logo": "https://flatqube.io/favicon.svg",
+                "poolRewards": ["SOON", "COLA", "BAPBAPA", "GRE"],
+                "apr": "3.0815",
+                "totalStake": "114846.005396701372"
+            }, {
+                "name": "USDT/DUSA",
+                "pair": "USDT/DUSA",
+                "pairLink": "https://flatqube.io/farming/0:2ff5db6e886e337c921154f3de9b77cfcadd1940c84b4f3b97c312c069cd7ea0",
+                "logo": "https://flatqube.io/favicon.svg",
+                "poolRewards": ["DUSA"],
+                "apr": "97.9022",
+                "totalStake": "53838.449198250683"
+            }, {
+                "name": "WEVER/BRIDGE",
+                "pair": "WEVER/BRIDGE",
+                "pairLink": "https://flatqube.io/farming/0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0",
+                "logo": "https://flatqube.io/favicon.svg",
+                "poolRewards": ["BRIDGE", "QUBE"],
+                "apr": "0.5353",
+                "totalStake": "11763741.699148025624"
+            },
+            ...
+    }
+```
+{% endswagger-response %}
+{% endswagger %}
+
