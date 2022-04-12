@@ -54,7 +54,7 @@
   * [How to](use/pairs/how-to/README.md)
     * [Create new pair](use/pairs/how-to/create-new-pair.md)
     * [See custom token pair](use/pairs/how-to/see-custom-token-pair.md)
-    *
+    * [Manage favorite pairs](https://docs.flatqube.io/use/pairs/interface/pair-page/add-to-favorites)
 * [Pools](use/pools/README.md)
   * [Interface](use/pools/interface/README.md)
     * [Pools Overview](use/pools/interface/pools-overview.md)
