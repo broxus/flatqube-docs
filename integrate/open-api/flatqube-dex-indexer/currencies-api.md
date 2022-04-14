@@ -233,7 +233,7 @@ Value used for testing is Dai Stablecoin address: 0:eb2ccad2020d9af9cec137d3146d
 
 Body required. Example data used for Postman tests:
 
-| Field name  | Example name                                                | Comment                                                                       |
+| Field name  | Example value                                               | Comment                                                                       |
 | ----------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `from`      | `1646741858511` or `March 8, 2022 12:17:38.511 PM GMT time` | Date-time in UNIX format for the start of timeframe                           |
 | `timeframe` | `“H1”, “D1”`                                                | Desired timeframe to retrieve prices data, could be set for hours, days, etc. |
@@ -450,3 +450,4 @@ app.post('/currencies/:currencies/tvl', (req, res) => {
     })
   })
 ```
+
