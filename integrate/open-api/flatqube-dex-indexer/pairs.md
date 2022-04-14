@@ -409,8 +409,60 @@ It can be used ie. for graphic representation of price change of the right pair 
 ### Request parameters
 
 Left parameter required - represents the address of a specific currency. \
-**Value used for testing is WEVER address: `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`**
+Value used for testing is WEVER address: `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`
 
-**right parameter required - represents the address of a specific currency. Value used for testing is BRIDGE address:**\
-**0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1**\
-****
+Right parameter required - represents the address of a specific currency. \
+Value used for testing is BRIDGE address:\
+`0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
+
+Data used for Postman tests:
+
+| Field name  | Example value   | Comment                                                                                                           |
+| ----------- | --------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `from`      | `1646741858511` | Date time in UNIX format for the start of timeframe (ie. 1646741858511 or March 8, 2022 12:17:38.511 PM GMT time) |
+| `timeframe` | `H1`            | desired timeframe to retrieve prices data, could be set for hours, days, etc. (“H1”, “D1”...)                     |
+| `to`        | `1647346658513` | date time in UNIX format for the end of timeframe (ie. 1647346658513 or March 15, 2022 12:17:38.513 PM)           |
+
+```
+{
+  "from": 1646741858511,
+  "timeframe": "H1",
+  "to": 1647346658513
+}
+```
+
+### Response field explanation
+
+| Field name       | Example value      | Comment                                                                                                                                                                        |
+| ---------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `close`          | `0.025131270323`   | Value of the currency (in USD) in the last moment of given timeframe                                                                                                           |
+| `closeTimestamp` | `1647275606000`    | Date time for the “close” value in UNIX format                                                                                                                                 |
+| `high`           | `0.025131270323`   | The highest currency price in the given timeframe                                                                                                                              |
+| `low`            | `0.024980850704`   | The lowest currency price in the given timeframe                                                                                                                               |
+| `open`           | `0.024984390565`   | Value of the currency (in USD) in the first moment of the given timeframe                                                                                                      |
+| `openTimestamp`  | `1647274428000`    | Date time for the “open” value in UNIX format                                                                                                                                  |
+| `timeStamp`      | `1647273600000`    | date time in UNIX format, the round value of openTimestamp (ex. openTimeStamp is March 8, 2022 11:25:48 PM, timeStamp will be March 8, 2022 11:00:00 PM when converted to GMT) |
+| `volume`         | `249.621417263132` | Trading volume (in USD) for the given currency between openTimeStamp and closeTimeStamp)                                                                                       |
+
+### Example
+
+```
+ app.post('/pairs/left/:left/right/:right/ohlcv', (req, res) => {
+    axios({
+        method: 'post',
+        url: `${liveApiUrl}/pairs/left/${req.params.left}/right/${req.params.right}/ohlcv`,
+        data: {
+            from: req.body.from,
+            timeframe: req.body.timeframe,
+            to: req.body.to
+        }
+    })
+    .then(function(response){
+        res.send(response.data)
+    })
+    .catch(function(error){
+        console.error(error)
+        res.send('Error')
+    })
+  })
+```
