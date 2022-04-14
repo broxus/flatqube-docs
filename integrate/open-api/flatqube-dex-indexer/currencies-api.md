@@ -1,6 +1,6 @@
 # Currencies API
 
-{% swagger method="post" path="/{currencies}" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="DEX currencie info" %}
+{% swagger method="post" path="/{currencies}" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="Currency data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -367,7 +367,7 @@ app.post('/currencies/:currencies/volume', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="{currencies}/tvl" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies/" summary="DEX currency TVL" %}
+{% swagger method="post" path="{currencies}/tvl" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies/" summary="Currency tvl data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
