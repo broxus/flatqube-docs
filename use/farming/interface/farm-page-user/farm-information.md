@@ -6,11 +6,11 @@ This block contains information about the vesting rules, as well as addresses of
 
 ### [<mark style="color:red;">Vesting</mark>](../../concepts/vesting.md)
 
-\*\*\*\*[**Vesting ratio**](../../concepts/vesting.md) is the percentage of the reward that will be sent to vesting.
+[**Vesting ratio**](../../concepts/vesting.md) is the percentage of the reward that will be sent to vesting.
 
-\*\*\*\*[**Vesting period**](../../concepts/vesting.md) - the period for which the received reward is unlocked.
+[**Vesting period**](../../concepts/vesting.md) - the period for which the received reward is unlocked.
 
-\*\*\*\*[**Vesting end date**](../../concepts/vesting.md) - the date by which all currently available tokens in the Entitled reward will be unlocked. As long as you continue farming, this date will shift as new reward tokens are constantly being vested.
+[**Vesting end date**](../../concepts/vesting.md) - the date by which all currently available tokens in the Entitled reward will be unlocked. As long as you continue farming, this date will shift as new reward tokens are constantly being vested.
 
 ### <mark style="color:green;">Addresses</mark>
 
