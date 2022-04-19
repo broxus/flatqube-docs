@@ -17,7 +17,7 @@ A type of crypto asset. There are two main types of tokens on FlatQube:
 
 ## **Farming**
 
-Yield farming or liquidity mining \*\*\*\* is a way of earning through rewards by **providing liquidity** (as **LP tokens**) to **farming pools**.
+Yield farming or liquidity mining is a way of earning through rewards by **providing liquidity** (as **LP tokens**) to **farming pools**.
 
 ## **Farming pool**
 
@@ -49,7 +49,7 @@ The personal smart contract of the liquidity provider, which they use to deposit
 
 ## **Vault**
 
-A dedicated \*\*\*\* smart contract that stores all tokens deposited to the DEX.
+A dedicated smart contract that stores all tokens deposited to the DEX.
 
 ## **Builder**
 
