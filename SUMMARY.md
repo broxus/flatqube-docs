@@ -107,6 +107,8 @@
   * [FlatQube DEX Indexer](integrate/open-api/flatqube-dex-indexer/README.md)
     * [CMC API](integrate/open-api/flatqube-dex-indexer/cmc-api.md)
     * [Currencies API](integrate/open-api/flatqube-dex-indexer/currencies-api.md)
+    * [Pairs API](integrate/open-api/flatqube-dex-indexer/pairs.md)
+    * [Transactions API](integrate/open-api/flatqube-dex-indexer/transactions-api.md)
 * [Smart contracts](integrate/smart-contracts.md)
 
 ## ↗ See also
