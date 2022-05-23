@@ -110,6 +110,7 @@
     * [Pairs API](integrate/open-api/flatqube-dex-indexer/pairs.md)
     * [Transactions API](integrate/open-api/flatqube-dex-indexer/transactions-api.md)
 * [Smart contracts](integrate/smart-contracts.md)
+  * [Flatqube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
 
 ## ↗ See also
 
