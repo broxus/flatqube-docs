@@ -2,7 +2,7 @@
 
 * [Welcome to FlatQube](README.md)
 
-## 👨💻 Use
+## 👨💻 👨💻 Use
 
 * [Getting started](use/getting-started/README.md)
   * [How it works](use/getting-started/how-it-works.md)
@@ -110,8 +110,7 @@
     * [Pairs API](integrate/open-api/flatqube-dex-indexer/pairs.md)
     * [Transactions API](integrate/open-api/flatqube-dex-indexer/transactions-api.md)
 * [Smart contracts](integrate/smart-contracts.md)
-  * [Flatqube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
-    * [DexAccount](integrate/smart-contracts/dex-account.md)
+  * [FlatQube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
 
 ## ↗ See also
 

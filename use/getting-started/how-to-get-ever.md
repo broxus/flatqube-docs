@@ -11,5 +11,5 @@ Here are 3 ways to get EVER on your wallet.
 * The last way is to buy EVER or WEVER [directly on FlatQube](https://flatqube.io/swap/0:a519f99bb5d6d51ef958ed24d337ad75a1c770885dcd42d51d6663f9fcdacfb2/0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d).​
 
 {% hint style="info" %}
-To make a swap on FlatQube you need a [deployed wallet](https://app.gitbook.com/o/-MUxjK3XWZCxuBwyXzkS/s/vwtaQbYcgICT7ubKSITZ/getting-started/install-and-singing-in/deploy)!
+To make a swap on FlatQube you need a [deployed wallet](https://app.gitbook.com/s/vwtaQbYcgICT7ubKSITZ/getting-started/install-and-singing-in/deploy)!
 {% endhint %}

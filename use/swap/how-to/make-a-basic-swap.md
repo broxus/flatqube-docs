@@ -10,7 +10,7 @@ Let's make a basic swap!
 
 First, [connect your wallet](../../getting-started/how-to-connect-a-wallet.md) by clicking Connect to a wallet.
 
-![](<../../../.gitbook/assets/1 (1) (1).png>)
+![](<../../../.gitbook/assets/1 (1) (1) (2).png>)
 
 ### Select tokens
 
