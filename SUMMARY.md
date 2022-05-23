@@ -111,7 +111,7 @@
     * [Transactions API](integrate/open-api/flatqube-dex-indexer/transactions-api.md)
 * [Smart contracts](integrate/smart-contracts.md)
   * [FlatQube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
-
+    * [DexAccount](integrate/smart-contracts/dex-account.md)
 ## ↗ See also
 
 * [EVER Wallet](https://docs.everwallet.net)
