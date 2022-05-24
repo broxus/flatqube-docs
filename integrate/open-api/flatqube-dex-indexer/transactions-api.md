@@ -1,6 +1,6 @@
 # Transactions API
 
-{% swagger method="post" path="/transactions" baseUrl="https://api.flatqube.io/v1" summary="Transactions data" %}
+{% swagger method="post" path="/transactions" baseUrl="ton-swap-indexer.broxus.com/v1" summary="Transactions data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -34,7 +34,7 @@
 {% endswagger %}
 
 This function needs to get Transactions data of a certain user filtered by required parameters.\
-It can be used anywhere where a list of transactions should be shown and filtered using body parameters.
+It can be used anywhere where a list of transactions should be shown and filtered using body parameters.&#x20;
 
 ### Request parameters
 
@@ -123,3 +123,4 @@ Body required. Data used for Postman tests:
         console.error(error)
         res.send('Error') }) })
 ```
+
