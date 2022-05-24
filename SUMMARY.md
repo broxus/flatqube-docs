@@ -2,7 +2,7 @@
 
 * [Welcome to FlatQube](README.md)
 
-## 👨💻 👨💻 Use
+## 👨💻 👨💻 👨💻 Use
 
 * [Getting started](use/getting-started/README.md)
   * [How it works](use/getting-started/how-it-works.md)
@@ -112,6 +112,7 @@
 * [Smart contracts](integrate/smart-contracts.md)
   * [FlatQube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
     * [DexAccount](integrate/smart-contracts/dex-account.md)
+
 ## ↗ See also
 
 * [EVER Wallet](https://docs.everwallet.net)
