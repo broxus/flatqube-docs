@@ -1,6 +1,6 @@
-# Pairs API
+# Pairs
 
-{% swagger method="post" path="/pairs" baseUrl="https://api.flatqube.io/v1" summary="Pairs data" %}
+{% swagger method="post" path="/pairs" baseUrl="https://ton-swap-indexer.broxus.com/v1" summary="Pairs data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -23,7 +23,7 @@
 {% endswagger-response %}
 {% endswagger %}
 
-This function is used to get all Pairs data by\
+This function is used to get all Pairs data by \
 \
 It can be used for representing data specific to each currency in detail.
 
@@ -39,7 +39,7 @@ Body required. Data used for Postman tests:
 | `offset`            | `0`                                                                        |                                             |
 | `ordering`          | `tvlascending`                                                             | `order by pair’s TVL ascending/descending`  |
 | `tvlAmountGe`       | `8955040.156573434959`                                                     | `highest TVL amount`                        |
-| `tvlAmountLe`       | `8955043.156573434959`                                                     | `lowest TVL amount`                         |
+| `tvlAmountLe`       | `8955043.156573434959`                                                     |  `lowest TVL amount`                        |
 | `whiteListUri`      | `https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json` | `path to a white list`                      |
 
 ```
@@ -159,7 +159,7 @@ _Value used for testing is pool WEVER/BRIDGE address: `0:83b88abbcd562c8d8dc4cab
 
 | Field name        | Example value                                                        | Comment                                                |
 | ----------------- | -------------------------------------------------------------------- | ------------------------------------------------------ |
-| `meta`            | _\`\`_                                                               | object containing the following data:                  |
+| `meta`            | _``_                                                                 | object containing the following data:                  |
 | `base`            | _`WEVER`_                                                            | left token name (ie. WEVER)                            |
 | `baseAddress`     | `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` | root address of the left token                         |
 | `counter`         | `BRIDGE`                                                             | right token name (ie. BRIDGE)                          |
@@ -232,7 +232,7 @@ _Value used for testing is pool WEVER/BRIDGE address: `0:83b88abbcd562c8d8dc4cab
 
 This function is needs to get all cross pairs data.
 
-It can be used anywhere where certain details about one currency and how it affects the other one in the pair and vice versa is needed.
+It can be used anywhere where certain details about one currency and how it affects the other one in the pair and vice versa is needed.&#x20;
 
 ### Request parameters
 
@@ -330,10 +330,10 @@ This function is used to get pair data info by token root addresses. It can be u
 
 ### Request parameters
 
-Left and right parameter required - represents address of a specific currency.\
-Value used for testing are WEVER and BRIDGE addresses (respectively) :\
-left = `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`\
-\`\`right = `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
+Left and right parameter required - represents address of a specific currency. \
+Value used for testing are WEVER and BRIDGE addresses (respectively) : \
+left = `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d` \
+``right = `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
 
 ### Response field explanation:
 
@@ -402,16 +402,16 @@ app.post('/pairs/left/:left/right/:right', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function needs to get ohlcv pair data info by token root addresses.\
+This function needs to get ohlcv pair data info by token root addresses. \
 \
-It can be used ie. for graphic representation of price change of the right pair compared to the value of the left pair over a certain period of time (ie. 1 WEVER = 0.02245627 BRIDGE).
+It can be used ie. for graphic representation of price change of the right pair compared to the value of the left pair over a certain period of time (ie. 1 WEVER = 0.02245627 BRIDGE).&#x20;
 
 ### Request parameters
 
-Left parameter required - represents the address of a specific currency.\
+Left parameter required - represents the address of a specific currency. \
 Value used for testing is WEVER address: `0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d`
 
-Right parameter required - represents the address of a specific currency.\
+Right parameter required - represents the address of a specific currency. \
 Value used for testing is BRIDGE address:\
 `0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1`
 
