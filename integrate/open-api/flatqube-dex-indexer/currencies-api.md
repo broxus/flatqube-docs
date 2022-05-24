@@ -1,6 +1,6 @@
 # Currencies API
 
-{% swagger method="post" path="/{currencies}" baseUrl="https://api.flatqube.io/v1/currencies" summary="Currency data" %}
+{% swagger method="post" path="/{currencies}" baseUrl="https://ton-swap-indexer.broxus.com/v1/currencies" summary="Currency data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -227,7 +227,7 @@ It can be used for graphic representation of price change over a certain period 
 
 ### Request parameters
 
-Currencies parameter required - represents address of a specific currency.
+Currencies parameter required - represents address of a specific currency.&#x20;
 
 Value used for testing is Dai Stablecoin address: 0:eb2ccad2020d9af9cec137d3146dde067039965c13a27d97293c931dae22b2b9
 
@@ -309,7 +309,7 @@ Body required. Example data used for Postman tests:
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency volume data info.
+This function gets currency volume data info.&#x20;
 
 It can be used for graphic representation of trading volume (in USD) that has changed over the required period of time.
 
@@ -392,7 +392,7 @@ app.post('/currencies/:currencies/volume', (req, res) => {
 {% endswagger-response %}
 {% endswagger %}
 
-This function gets currency volume data info.
+This function gets currency volume data info.&#x20;
 
 It can be used for graphic representation of trading volume (in USD) that has changed over the required period of time.
 
@@ -426,6 +426,8 @@ _The example data used for Postman tests:_
 
 ### Example
 
+
+
 ```javascript
 app.post('/currencies/:currencies/tvl', (req, res) => {
     console.log(`Request params: ${req.params.currencies}`)
@@ -448,3 +450,4 @@ app.post('/currencies/:currencies/tvl', (req, res) => {
     })
   })
 ```
+
