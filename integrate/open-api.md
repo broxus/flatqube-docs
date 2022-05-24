@@ -6,7 +6,7 @@ description: >-
 
 # Open API
 
-***
+****
 
 {% hint style="warning" %}
 **Unfinished article**\
@@ -20,15 +20,11 @@ Please refer to the attached Swagger schemes.
 
 ## FlatQube indexer
 
-{% embed url="https://api.flatqube.io/v1/swagger.yaml" %}
-Swagger scheme
-{% endembed %}
+{% embed url="https://ton-swap-indexer.broxus.com/v1/swagger.yaml" %}
 
 ## Farming indexer
 
-{% embed url="https://farming.flatqube.io/v1/swagger.yaml" %}
-Swagger scheme
-{% endembed %}
+{% embed url="https://farming-pool-indexer.broxus.com/v1/swagger.yaml" %}
 
 ## Function calls
 
