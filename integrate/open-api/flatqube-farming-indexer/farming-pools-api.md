@@ -219,3 +219,26 @@ Body required. Data used for postman tests:
 | user\__token\_balance_    | 0                                                                  | lp token balance of the user that is sharing his account on FlatQube         |
 | user\__usdt\_balance_     | 0                                                                  | balance of the user that is sharing his account on FlatQube in USDT          |
 
+### Example
+
+```
+ app.post('/farming_pools/:farming_pool_address', (req, res) => {
+    console.log(`Request body data: ${req.params.farming_pool_address}`)
+ 
+    axios({
+        method: 'post',
+        url: `${liveApiUrl}/farming_pools/${req.params.farming_pool_address}`,
+        data: {
+            afterZeroBalance: req.body.afterZeroBalance,
+            userAddress: req.body.userAddress
+          }
+        })
+    .then(function(response){
+        res.send(response.data)
+    })
+    .catch(function(error){
+        console.error(error)
+        res.send('Error')
+    })
+  })
+```
