@@ -173,49 +173,49 @@ Body required. Data used for postman tests:
 
 ### Response field explanation
 
-| Field name                    | Example value | Comment |
-| ----------------------------- | ------------- | ------- |
-| apr                           |               |         |
-| apr\_change                   |               |         |
-| farm\_end\_time               |               |         |
-| farm\__start\_time_           |               |         |
-| history\_info                 |               |         |
-| left\_amount                  |               |         |
-| right\_amount                 |               |         |
-| usdt\_amount                  |               |         |
-| is\_active                    |               |         |
-| is\__low\_balance_            |               |         |
-| left\_address                 |               |         |
-| left\_balance                 |               |         |
-| left\_currency                |               |         |
-| pool\_address                 |               |         |
-| pool\_balance                 |               |         |
-| pool\_info                    |               |         |
-| rounds\_info                  |               |         |
-| end\_time                     |               |         |
-| reward\_info                  |               |         |
-| rewardPerSec                  |               |         |
-| rewardTokenRootAddress        |               |         |
-| rewardTokenScale              |               |         |
-| start\_time                   |               |         |
-| vesting\_period               |               |         |
-| versting\_ratio               |               |         |
-| pool\__owner\_address_        |               |         |
-| **reward\_token\_root\_info** |               |         |
-| reward\_currency              |               |         |
-| reward\__per\_second_         |               |         |
-| reward\__root\_address_       |               |         |
-| reward\__token\_scale_        |               |         |
-| right\_address                |               |         |
-| right\_balance                |               |         |
-| right\_currency               |               |         |
-| share                         |               |         |
-| share\_change                 |               |         |
-| token\__root\_address_        |               |         |
-| token\__root\_scale_          |               |         |
-| _token\_root\_currency_       |               |         |
-| tvl                           |               |         |
-| tvl\_change                   |               |         |
-| user\__token\_balance_        |               |         |
-| user\__usdt\_balance_         |               |         |
+| Field name                | Example value | Comment                                                                      |
+| ------------------------- | ------------- | ---------------------------------------------------------------------------- |
+| apr                       | 59.7          | Annual Percentage Rate of the current pool                                   |
+| apr\_change               | -0.62         | APR change in the last 24h                                                   |
+| farm\_end\_time           | null          | date time in UNIX format when does the farming in a certain pool end         |
+| farm\__start\_time_       |               | date time in UNIX format when did the farming in a certain pool start        |
+| history\_info             |               | following info about user’s activity in this pool:                           |
+| left\_amount              |               | amount of left currency reward                                               |
+| right\_amount             |               | amount of right currency reward                                              |
+| usdt\_amount              |               | total amount in USDT                                                         |
+| is\_active                |               | true if the pool is active, false if not                                     |
+| is\__low\_balance_        |               | true if the balance is low, false if not                                     |
+| left\_address             |               | root address of the left currency in the pool                                |
+| left\_balance             |               | total balance of the left currency in the pool                               |
+| left\_currency            |               | symbol of the left currency                                                  |
+| pool\_address             |               | address of the current pool                                                  |
+| pool\_balance             |               | total balance of the LP tokens in the certain pool                           |
+| pool\_info                |               | contains following data regarding the certain pool:                          |
+| rounds\_info              |               | contains a list of farming rounds in the pool and following info about them: |
+| end\_time                 |               | date time in UNIX format when did the round end                              |
+| reward\_info              |               | contains list of reward tokens along with additional info about the rewards: |
+| rewardPerSec              |               | how many tokens are distributed as a reward per second                       |
+| rewardTokenRootAddress    |               | symbol of the reward token                                                   |
+| rewardTokenScale          |               | root address of the certain token                                            |
+| start\_time               |               | date time in UNIX format when did the round start                            |
+| vesting\_period           |               | timeframe in which vesting will take place                                   |
+| versting\_ratio           |               | percentage of remuneration that will be sent to vesting                      |
+| pool\__owner\_address_    |               | address of the user that created the pool                                    |
+| reward\_token\_root\_info |               | list of reward tokens with following info about them:                        |
+| reward\_currency          |               | symbol of the reward token                                                   |
+| reward\__per\_second_     |               | how many tokens are distributed as a reward per second                       |
+| reward\__root\_address_   |               | root address of the certain reward token                                     |
+| reward\__token\_scale_    |               | number used for scaling the reward amount                                    |
+| right\_address            |               | root address of the right currency in the pool                               |
+| right\_balance            |               | total balance of the left currency in the pool                               |
+| right\_currency           |               | symbol of the right currency                                                 |
+| share                     |               | amount of tokens user shared for contribution to the pool                    |
+| share\_change             |               | share change in percentage in the last 24h                                   |
+| token\__root\_address_    |               | address of the liquidity pool                                                |
+| token\__root\_scale_      |               | number used for scaling the lp token amount                                  |
+| _token\_root\_currency_   |               | name of the liquidity pool                                                   |
+| tvl                       |               | total value locked (TVL) in that pool                                        |
+| tvl\_change               |               | TVL change in last 24h                                                       |
+| user\__token\_balance_    |               | lp token balance of the user that is sharing his account on FlatQube         |
+| user\__usdt\_balance_     |               | balance of the user that is sharing his account on FlatQube in USDT          |
 

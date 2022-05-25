@@ -1,6 +1,6 @@
 # CMC API
 
-{% swagger method="get" path="" baseUrl="https://api.flatqube.io/v1/cmc/dex" summary="CMC DEX pools info" %}
+{% swagger method="get" path="" baseUrl="https://ton-swap-indexer.broxus.com/v1/cmc/dex" summary="CMC DEX pools info" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -76,7 +76,7 @@ _No parameters are required._
   })
 ```
 
-{% swagger method="get" path="/cmc/farming" baseUrl="https://api.flatqube.io/v1" summary="CMC DEX farming pools info" %}
+{% swagger method="get" path="/cmc/farming" baseUrl="https://ton-swap-indexer.broxus.com/v1" summary="CMC DEX farming pools info" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -127,20 +127,20 @@ _No parameters required_
 
 ### Response fields explanation
 
-| Field name      | Example value                                                                                                                                                                                      | Comment                                                                                           |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `provider`      | `FlatQube`                                                                                                                                                                                         | Represents provider of the farming pool                                                           |
-| `provider_logo` | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           | Path to the provider logo provider                                                                |
-| `url`           | https://flatqube.io                                                                                                                                                                                | Url to the provider                                                                               |
-| `links`         |                                                                                                                                                                                                    |                                                                                                   |
-| `pools`         |                                                                                                                                                                                                    | List of all the pools available on the provider, contains following information about each pool   |
-| `name`          | `WEVER/BRIDGE`                                                                                                                                                                                     | Name of the pool in format left pair/right pair                                                   |
-| `pair`          | `WEVER/BRIDGE`                                                                                                                                                                                     | Info about which two tokens are in pair for the given pool                                        |
-| `pairLink`      | [`https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3`](https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3) | URL to the farming pool where you can see all the details about that pool and start farming in it |
-| `logo`          | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)\`\`                                                                                                                           |                                                                                                   |
-| `poolRewards`   | `BRIDGE, QUBE`                                                                                                                                                                                     | Tokens that are given as a reward for farming in that pool (ie. BRIDGE, QUBE)                     |
-| `apr`           | `97.9022`                                                                                                                                                                                          | Apr (Annual Percentage Rate) for farming in that pool                                             |
-| `totalStake`    | `53838.449198250683`                                                                                                                                                                               | TVL (Total Value Locked) in USD for the current pool                                              |
+| Field name      | Example value                                                                                                                                                                                        | Comment                                                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `provider`      | `FlatQube`                                                                                                                                                                                           | Represents provider of the farming pool                                                           |
+| `provider_logo` | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)``                                                                                                                               | Path to the provider logo provider                                                                |
+| `url`           | https://flatqube.io                                                                                                                                                                                  | Url to the provider                                                                               |
+| `links`         |                                                                                                                                                                                                      |                                                                                                   |
+| `pools`         |                                                                                                                                                                                                      | List of all the pools available on the provider, contains following information about each pool   |
+| `name`          | `WEVER/BRIDGE`                                                                                                                                                                                       | Name of the pool in format left pair/right pair                                                   |
+| `pair`          | `WEVER/BRIDGE`                                                                                                                                                                                       | Info about which two tokens are in pair for the given pool                                        |
+| `pairLink`      | [`https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3`](https://flatqube.io/farming/0:5b297ebf0d4baa84e5e5f2cff61f3563fa94e62e8c93d5a2fd19145d72007bf3)`` | URL to the farming pool where you can see all the details about that pool and start farming in it |
+| `logo`          | [`https://flatqube.io/favicon.svg`](https://flatqube.io/favicon.svg)``                                                                                                                               |                                                                                                   |
+| `poolRewards`   | `BRIDGE, QUBE`                                                                                                                                                                                       | Tokens that are given as a reward for farming in that pool (ie. BRIDGE, QUBE)                     |
+| `apr`           | `97.9022`                                                                                                                                                                                            | Apr (Annual Percentage Rate) for farming in that pool                                             |
+| `totalStake`    | `53838.449198250683`                                                                                                                                                                                 | TVL (Total Value Locked) in USD for the current pool                                              |
 
 ### Example
 
@@ -159,3 +159,4 @@ app.get('/cmc/farming', (req, res) => {
     })
   })
 ```
+
