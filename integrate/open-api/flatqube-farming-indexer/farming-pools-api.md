@@ -7,32 +7,41 @@
 
 {% swagger-response status="200: OK" description="Successful request" %}
 ```
-curl -X 'POST' \
-  'https://farming.flatqube.io/farming_pools' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "aprGe": "52.6300",
-  "aprLe": "60",
-  "favoritePoolAddresses": ["0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0"],
-  "isActive":true,
-  "isAwaitingStart": true,
-  "isLowBalance": false,
-  "isWithMyFarming": true,
-  "leftAddress": "0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d",
-  "leftCurrency": "WEVER",
-  "limit": 0,
-  "offset": 0,
-  "ordering": "tvlascending",
-  "rightAddress": "0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1",
-  "rightCurrency": "BRIDGE",
-  "rootAddresses": ["0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1", "0:9f20666ce123602fd7a995508aeaa0ece4f92133503c0dfbd609b3239f3901e2"],
-  "tvlGe": "12017899.724891808371",
-  "tvlLe": "12217899.724891808371",
-  "userAddress": "0:102cf118b6875d201a3011d5dc17a358ee4d4333ad7e167824515171ed8f6f63",
-  "whiteCurrencyAddresses": [],
-  "whiteListUri": "https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json"
-}'
+{
+    "pools_info": [
+        {
+            "pool_address": "0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0",
+            "left_address": "0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d",
+            "right_address": "0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1",
+            "left_currency": "WEVER",
+            "right_currency": "BRIDGE",
+            "tvl": "17826322.032214433830",
+            "tvl_change": "1.54",
+            "apr": "59.7900",
+            "apr_change": "-0.62",
+            "share": "0",
+            "user_token_balance": "0",
+            "is_low_balance": false,
+            "pool_owner_address": "0:a2b489a30c88648ab4bf98c2ba9d07c363c9d93e72a43a0625ff4644524582c6",
+            "token_root_address": "0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2",
+            "token_root_currency": "FLATQUBE-LP-WEVER-BRIDGE",
+            "token_root_scale": 9,
+            "farm_start_time": 1653004800000,
+            "farm_end_time": null,
+            "is_active": true,
+            "reward_token_root_info": [
+                {
+                    "reward_root_address": "0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1",
+                    "reward_currency": "BRIDGE",
+                    "reward_scale": 9
+                },
+                {
+                    "reward_root_address": "0:9f20666ce123602fd7a995508aeaa0ece4f92133503c0dfbd609b3239f3901e2",
+                    "reward_currency": "QUBE",
+                    "reward_scale": 9
+                }
+            ]
+}
 ```
 {% endswagger-response %}
 {% endswagger %}
@@ -134,3 +143,79 @@ app.post('/farming_pools', (req, res) => {
     })
   })
 ```
+
+{% swagger method="post" path="/farming_pools/{farming_pool_address}" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pool data" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="Successful request" %}
+```javascript
+```
+{% endswagger-response %}
+{% endswagger %}
+
+This method gets specific farming pool data by farming pool address.
+
+It can be used for showing the desired farming pool with all the details about it, such as annual percentage rate, pool balance, right and left currencies and addresses, total value locked, etc.
+
+### Request parameters
+
+Farming\_pool\_address parameter required - represents address of a specific farming pool. \
+Value used for testing is: `0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0`
+
+Body required. Data used for postman tests:
+
+| Field name       | Example value                                                      | Comment             |
+| ---------------- | ------------------------------------------------------------------ | ------------------- |
+| afterZeroBalance | true                                                               | -                   |
+| userAddress      | 0:102cf118b6875d201a3011d5dc17a358ee4d4333ad7e167824515171ed8f6f63 | address of the user |
+
+### Response field explanation
+
+| Field name                    | Example value | Comment |
+| ----------------------------- | ------------- | ------- |
+| apr                           |               |         |
+| apr\_change                   |               |         |
+| farm\_end\_time               |               |         |
+| farm\__start\_time_           |               |         |
+| history\_info                 |               |         |
+| left\_amount                  |               |         |
+| right\_amount                 |               |         |
+| usdt\_amount                  |               |         |
+| is\_active                    |               |         |
+| is\__low\_balance_            |               |         |
+| left\_address                 |               |         |
+| left\_balance                 |               |         |
+| left\_currency                |               |         |
+| pool\_address                 |               |         |
+| pool\_balance                 |               |         |
+| pool\_info                    |               |         |
+| rounds\_info                  |               |         |
+| end\_time                     |               |         |
+| reward\_info                  |               |         |
+| rewardPerSec                  |               |         |
+| rewardTokenRootAddress        |               |         |
+| rewardTokenScale              |               |         |
+| start\_time                   |               |         |
+| vesting\_period               |               |         |
+| versting\_ratio               |               |         |
+| pool\__owner\_address_        |               |         |
+| **reward\_token\_root\_info** |               |         |
+| reward\_currency              |               |         |
+| reward\__per\_second_         |               |         |
+| reward\__root\_address_       |               |         |
+| reward\__token\_scale_        |               |         |
+| right\_address                |               |         |
+| right\_balance                |               |         |
+| right\_currency               |               |         |
+| share                         |               |         |
+| share\_change                 |               |         |
+| token\__root\_address_        |               |         |
+| token\__root\_scale_          |               |         |
+| _token\_root\_currency_       |               |         |
+| tvl                           |               |         |
+| tvl\_change                   |               |         |
+| user\__token\_balance_        |               |         |
+| user\__usdt\_balance_         |               |         |
+
