@@ -66,31 +66,31 @@ Body required. Data used for postman tests:
 
 ### Response field explanation
 
-| Field name                | Example value | Comment                                                                   |
-| ------------------------- | ------------- | ------------------------------------------------------------------------- |
-| Pools\_info               |               | list of all available pools with following info                           |
-| favorite\_pools\_info     |               | list of all the farming pools user marked as favorite with following info |
-| apr                       |               | Annual Percentage Rate                                                    |
-| apr\_change               |               | APR change in the last 24h                                                |
-| farm\_end\_time           |               | date time in UNIX format when does the farming in a certain pool end      |
-| farm\_start\_time         |               | date time in UNIX format when did the farming in a certain pool start     |
-| is\_active                |               | true if the pool is active, false if not                                  |
-| is\_low\_balance          |               | true if the balance is low, false if not                                  |
-| left\_address             |               | root address of the left currency in the pool                             |
-| left\_currency            |               | symbol of the left currency (ie. WEVER)                                   |
-| pool\_address             |               | address of the current pool                                               |
-| pool\_owner\_address      |               | address of the user that created the pool                                 |
-| reward\_token\_root\_info |               | list of reward tokens with following info about them                      |
-| reward\_currency          |               | symbol of the reward token                                                |
-| reward\_root\_address     |               | root address of the certain reward token                                  |
-| reward\_scale             |               | multiply reward amount with this value to get the right amount            |
-| right\_address            |               | root address of the right currency in the pool                            |
-| right\_currency           |               | symbol of the right currency (ie. BRIDGE)                                 |
-| share                     |               | amount of tokens user shared for contribution to the pool                 |
-| token\_root\_address      |               | address of the liquidity pool                                             |
-| token\_root\_currency     |               | name of the liquidity pool (ie. FLATQUBE-LP-WEVER-BRIDGE)                 |
-| tvl                       |               | total value locked (TVL) in that pool                                     |
-| tvl\_change               |               | TVL change in last 24h (percentage)                                       |
-| user\_token\_balance      |               | balance of the user that is sharing his account on FlatQube               |
-| favorite\_total\_count    |               |                                                                           |
+| Field name                | Example value                                                      | Comment                                                                   |
+| ------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| Pools\_info               | -                                                                  | list of all available pools with following info                           |
+| favorite\_pools\_info     | -                                                                  | list of all the farming pools user marked as favorite with following info |
+| apr                       | 205                                                                | Annual Percentage Rate                                                    |
+| apr\_change               | -0.50                                                              | APR change in the last 24h                                                |
+| farm\_end\_time           | null                                                               | date time in UNIX format when does the farming in a certain pool end      |
+| farm\_start\_time         | 1649289600000                                                      | date time in UNIX format when did the farming in a certain pool start     |
+| is\_active                | true                                                               | true if the pool is active, false if not                                  |
+| is\_low\_balance          | false                                                              | true if the balance is low, false if not                                  |
+| left\_address             | 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d | root address of the left currency in the pool                             |
+| left\_currency            | WEVER                                                              | symbol of the left currency (ie. WEVER)                                   |
+| pool\_address             | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | address of the current pool                                               |
+| pool\_owner\_address      | 0:a2b489a30c88648ab4bf98c2ba9d07c363c9d93e72a43a0625ff4644524582c6 | address of the user that created the pool                                 |
+| reward\_token\_root\_info | -                                                                  | list of reward tokens with following info about them                      |
+| reward\_currency          | BRIDGE                                                             | symbol of the reward token                                                |
+| reward\_root\_address     | 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1 | root address of the certain reward token                                  |
+| reward\_scale             | 9                                                                  | multiply reward amount with this value to get the right amount            |
+| right\_address            | 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1 | root address of the right currency in the pool                            |
+| right\_currency           | BRIDGE                                                             | symbol of the right currency (ie. BRIDGE)                                 |
+| share                     | 0                                                                  | amount of tokens user shared for contribution to the pool                 |
+| token\_root\_address      | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2 | address of the liquidity pool                                             |
+| token\_root\_currency     | FLATQUBE-LP-WEVER-BRIDGE                                           | name of the liquidity pool (ie. FLATQUBE-LP-WEVER-BRIDGE)                 |
+| tvl                       | 17826322.032214433830                                              | total value locked (TVL) in that pool                                     |
+| tvl\_change               | 1.54                                                               | TVL change in last 24h (percentage)                                       |
+| user\_token\_balance      | 0                                                                  | balance of the user that is sharing his account on FlatQube               |
+| favorite\_total\_count    | 4                                                                  | total number of user’s favorite farming pools                             |
 
