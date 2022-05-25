@@ -55,3 +55,24 @@ Body required. Data used for postman tests:
 | whiteCurrencyAddresses | 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d, 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1               | -                                                                                                        |
 | whiteListUri           | [https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json](https://raw.githubusercontent.com/broxus/ton-assets/master/manifest.json) | path to the whitelist                                                                                    |
 
+### Response field explanation
+
+| Field name      | Example value | Comment                                                         |
+| --------------- | ------------- | --------------------------------------------------------------- |
+| totalCount      |               | total transactions number in one pool                           |
+| Transactions    |               | list of all the transactions containing following data          |
+| kind            |               | what kind of transaction (Deposit, Claim, Withdraw…)            |
+| leftExec        |               | amount of left currency participating in the transaction        |
+| messegeHash     |               | hash of the transaction message                                 |
+| poolAddress     |               | address of the pool                                             |
+| rightExec       |               | amount of right currency participating in the transaction       |
+| timestampBlock  |               | date time in UNIX format when the transaction block was created |
+| tokenAddress    |               |  LP token address                                               |
+| tokenCurrency   |               |  LP token symbol                                                |
+| tokenExec       |               | **token amount in the transaction**                             |
+| transactionHash |               | **hash code of the transaction**                                |
+| tvExec          |               | **total amount (in USD) in the transaction**                    |
+| userAddress     |               | **address of the user initiating the transaction**              |
+
+
+
