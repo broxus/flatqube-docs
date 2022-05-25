@@ -1,4 +1,4 @@
-# Farming pools section
+# Farming pools API
 
 {% swagger method="post" path="/farming_pools" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pools data" %}
 {% swagger-description %}
@@ -94,3 +94,43 @@ Body required. Data used for postman tests:
 | user\_token\_balance      | 0                                                                  | balance of the user that is sharing his account on FlatQube               |
 | favorite\_total\_count    | 4                                                                  | total number of user’s favorite farming pools                             |
 
+### Example
+
+```
+app.post('/farming_pools', (req, res) => {
+ 
+    axios({
+        method: 'post',
+        url: `${liveApiUrl}/farming_pools`,
+        data: {
+            aprGe: req.body.aprGe,
+            aprLe: req.body.aprLe,
+            favoritePoolAddresses: req.body.favoritePoolAddresses,
+            isActive: req.body.isActive,
+            isAwaitingStart: req.body.isAwaitingStart,
+            isLowBalance: req.body.isLowBalance,
+            isWithMyFarming: req.body.isWithMyFarming,
+            leftAddress: req.body.leftAddress,
+            leftCurrency: req.body.leftCurrency,
+            limit: req.body.limit,
+            offset: req.body.offset,
+            ordering: req.body.ordering,
+            rightAddress: req.body.rightAddress,
+            rightCurrency: req.body.rightCurrency,
+            rootAddresses: req.body.rootAddresses,
+            tvlGe: req.body.tvlGe,
+            tvlLe: req.body.tvlLe,
+            userAddress: req.body.userAddress,
+            whiteCurrencyAddresses: req.body.whiteCurrencyAddresses,
+            whiteListUri: req.body.whiteListUri
+          }
+        })
+    .then(function(response){
+        res.send(response.data)
+    })
+    .catch(function(error){
+        console.error(error)
+        res.send('Error')
+    })
+  })
+```
