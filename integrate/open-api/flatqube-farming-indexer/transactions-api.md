@@ -57,22 +57,55 @@ Body required. Data used for postman tests:
 
 ### Response field explanation
 
-| Field name      | Example value | Comment                                                         |
-| --------------- | ------------- | --------------------------------------------------------------- |
-| totalCount      |               | total transactions number in one pool                           |
-| Transactions    |               | list of all the transactions containing following data          |
-| kind            |               | what kind of transaction (Deposit, Claim, Withdraw…)            |
-| leftExec        |               | amount of left currency participating in the transaction        |
-| messegeHash     |               | hash of the transaction message                                 |
-| poolAddress     |               | address of the pool                                             |
-| rightExec       |               | amount of right currency participating in the transaction       |
-| timestampBlock  |               | date time in UNIX format when the transaction block was created |
-| tokenAddress    |               |  LP token address                                               |
-| tokenCurrency   |               |  LP token symbol                                                |
-| tokenExec       |               | **token amount in the transaction**                             |
-| transactionHash |               | **hash code of the transaction**                                |
-| tvExec          |               | **total amount (in USD) in the transaction**                    |
-| userAddress     |               | **address of the user initiating the transaction**              |
+| Field name      | Example value                                                      | Comment                                                         |
+| --------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| totalCount      | 2                                                                  | total transactions number in one pool                           |
+| Transactions    | -                                                                  | list of all the transactions containing following data          |
+| kind            | Withdraw                                                           | what kind of transaction (Deposit, Claim, Withdraw…)            |
+| leftExec        | null                                                               | amount of left currency participating in the transaction        |
+| messegeHash     | 80056a0cb8ea3a2710edd823b9250d8ee717c825079c50667d4c84824138f2d6   | hash of the transaction message                                 |
+| poolAddress     | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | address of the pool                                             |
+| rightExec       | 148.559845816278                                                   | amount of right currency participating in the transaction       |
+| timestampBlock  | 1649355777000                                                      | date time in UNIX format when the transaction block was created |
+| tokenAddress    | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2 |  LP token address                                               |
+| tokenCurrency   | FLATQUBE-LP-WEVER-BRIDGE                                           |  LP token symbol                                                |
+| tokenExec       | 6333.372380447000                                                  | token amount in the transaction                                 |
+| transactionHash | b78457c3ca523321bed353567954ded6cd8af94dfff32aae7098f33cd9603bfa   | hash code of the transaction                                    |
+| tvExec          | 2719.899465109213                                                  | total amount (in USD) in the transaction                        |
+| userAddress     | 0:f1f1158fcf4f0725a5a53c4d1ac1d37583b36eb4e9ab542d3a288424f6762fdd | address of the user initiating the transaction                  |
 
+### Example
 
-
+```
+ app.post('/transactions', (req, res) => {
+ 
+    axios({
+        method: 'post',
+        url: `${liveApiUrl}/transactions`,
+        data: {
+            eventTypes: req.body.eventTypes,
+            limit: req.body.limit,
+            offset: req.body.offset,
+            ordering: req.body.ordering,
+            poolAddress: req.body.poolAddress,
+            rootAddresses: req.body.rootAddresses,
+            rootTokenAmountGe: req.body.rootTokenAmountGe,
+            rootTokenAmountLe: req.body.rootTokenAmountLe,
+            timestampBlockGe: req.body.timestampBlockGe,
+            timestampBlockLe: req.body.timestampBlockLe,
+            tvGe: req.body.tvGe,
+            tvLe: req.body.tvLe,
+            userAddress: req.body.userAddress,
+            whiteCurrencyAddresses: req.body.whiteCurrencyAddresses,
+            whiteListUri: req.body.whiteListUri
+          }
+        })
+    .then(function(response){
+        res.send(response.data)
+    })
+    .catch(function(error){
+        console.error(error)
+        res.send('Error')
+    })
+  })
+```
