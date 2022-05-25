@@ -109,6 +109,8 @@
     * [Currencies API](integrate/open-api/flatqube-dex-indexer/currencies-api.md)
     * [Pairs API](integrate/open-api/flatqube-dex-indexer/pairs.md)
     * [Transactions API](integrate/open-api/flatqube-dex-indexer/transactions-api.md)
+  * [FlatQube Farming Indexer](integrate/open-api/flatqube-farming-indexer/README.md)
+    * [Farming pools section](integrate/open-api/flatqube-farming-indexer/farming-pools-section.md)
 * [Smart contracts](integrate/smart-contracts.md)
   * [FlatQube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
     * [DexAccount](integrate/smart-contracts/dex-account.md)
