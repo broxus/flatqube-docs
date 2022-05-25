@@ -173,49 +173,49 @@ Body required. Data used for postman tests:
 
 ### Response field explanation
 
-| Field name                | Example value | Comment                                                                      |
-| ------------------------- | ------------- | ---------------------------------------------------------------------------- |
-| apr                       | 59.7          | Annual Percentage Rate of the current pool                                   |
-| apr\_change               | -0.62         | APR change in the last 24h                                                   |
-| farm\_end\_time           | null          | date time in UNIX format when does the farming in a certain pool end         |
-| farm\__start\_time_       |               | date time in UNIX format when did the farming in a certain pool start        |
-| history\_info             |               | following info about user’s activity in this pool:                           |
-| left\_amount              |               | amount of left currency reward                                               |
-| right\_amount             |               | amount of right currency reward                                              |
-| usdt\_amount              |               | total amount in USDT                                                         |
-| is\_active                |               | true if the pool is active, false if not                                     |
-| is\__low\_balance_        |               | true if the balance is low, false if not                                     |
-| left\_address             |               | root address of the left currency in the pool                                |
-| left\_balance             |               | total balance of the left currency in the pool                               |
-| left\_currency            |               | symbol of the left currency                                                  |
-| pool\_address             |               | address of the current pool                                                  |
-| pool\_balance             |               | total balance of the LP tokens in the certain pool                           |
-| pool\_info                |               | contains following data regarding the certain pool:                          |
-| rounds\_info              |               | contains a list of farming rounds in the pool and following info about them: |
-| end\_time                 |               | date time in UNIX format when did the round end                              |
-| reward\_info              |               | contains list of reward tokens along with additional info about the rewards: |
-| rewardPerSec              |               | how many tokens are distributed as a reward per second                       |
-| rewardTokenRootAddress    |               | symbol of the reward token                                                   |
-| rewardTokenScale          |               | root address of the certain token                                            |
-| start\_time               |               | date time in UNIX format when did the round start                            |
-| vesting\_period           |               | timeframe in which vesting will take place                                   |
-| versting\_ratio           |               | percentage of remuneration that will be sent to vesting                      |
-| pool\__owner\_address_    |               | address of the user that created the pool                                    |
-| reward\_token\_root\_info |               | list of reward tokens with following info about them:                        |
-| reward\_currency          |               | symbol of the reward token                                                   |
-| reward\__per\_second_     |               | how many tokens are distributed as a reward per second                       |
-| reward\__root\_address_   |               | root address of the certain reward token                                     |
-| reward\__token\_scale_    |               | number used for scaling the reward amount                                    |
-| right\_address            |               | root address of the right currency in the pool                               |
-| right\_balance            |               | total balance of the left currency in the pool                               |
-| right\_currency           |               | symbol of the right currency                                                 |
-| share                     |               | amount of tokens user shared for contribution to the pool                    |
-| share\_change             |               | share change in percentage in the last 24h                                   |
-| token\__root\_address_    |               | address of the liquidity pool                                                |
-| token\__root\_scale_      |               | number used for scaling the lp token amount                                  |
-| _token\_root\_currency_   |               | name of the liquidity pool                                                   |
-| tvl                       |               | total value locked (TVL) in that pool                                        |
-| tvl\_change               |               | TVL change in last 24h                                                       |
-| user\__token\_balance_    |               | lp token balance of the user that is sharing his account on FlatQube         |
-| user\__usdt\_balance_     |               | balance of the user that is sharing his account on FlatQube in USDT          |
+| Field name                | Example value                                                      | Comment                                                                      |
+| ------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| apr                       | 59.7                                                               | Annual Percentage Rate of the current pool                                   |
+| apr\_change               | -0.62                                                              | APR change in the last 24h                                                   |
+| farm\_end\_time           | null                                                               | date time in UNIX format when does the farming in a certain pool end         |
+| farm\__start\_time_       | 1653004800000                                                      | date time in UNIX format when did the farming in a certain pool start        |
+| history\_info             | -                                                                  | following info about user’s activity in this pool:                           |
+| left\_amount              | 0                                                                  | amount of left currency reward                                               |
+| right\_amount             | 0                                                                  | amount of right currency reward                                              |
+| usdt\_amount              | 0                                                                  | total amount in USDT                                                         |
+| is\_active                | true                                                               | true if the pool is active, false if not                                     |
+| is\__low\_balance_        | false                                                              | true if the balance is low, false if not                                     |
+| left\_address             | 0:a49cd4e158a9a15555e624759e2e4e766d22600b7800d891e46f9291f044a93d | root address of the left currency in the pool                                |
+| left\_balance             | 41429655.89348116                                                  | total balance of the left currency in the pool                               |
+| left\_currency            | WEVER                                                              | symbol of the left currency                                                  |
+| pool\_address             | 0:39c1ba1305438e59c444267f8887d3ceb7312ab906760b8b891c865217ea8ff0 | address of the current pool                                                  |
+| pool\_balance             | 37424521.838044951                                                 | total balance of the LP tokens in the certain pool                           |
+| pool\_info                | -                                                                  | contains following data regarding the certain pool:                          |
+| rounds\_info              | -                                                                  | contains a list of farming rounds in the pool and following info about them: |
+| end\_time                 | 1650412800                                                         | date time in UNIX format when did the round end                              |
+| reward\_info              | -                                                                  | contains list of reward tokens along with additional info about the rewards: |
+| rewardPerSec              | 0.0050                                                             | how many tokens are distributed as a reward per second                       |
+| rewardTokenRootAddress    | 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1 | symbol of the reward token                                                   |
+| rewardTokenScale          | 9                                                                  | root address of the certain token                                            |
+| start\_time               | 1650412800                                                         | date time in UNIX format when did the round start                            |
+| vesting\_period           | 10368000                                                           | timeframe in which vesting will take place                                   |
+| versting\_ratio           | 1000                                                               | percentage of remuneration that will be sent to vesting                      |
+| pool\__owner\_address_    | 0:a2b489a30c88648ab4bf98c2ba9d07c363c9d93e72a43a0625ff4644524582c6 | address of the user that created the pool                                    |
+| reward\_token\_root\_info | -                                                                  | list of reward tokens with following info about them:                        |
+| reward\_currency          | BRIDGE                                                             | symbol of the reward token                                                   |
+| reward\__per\_second_     | 0.0050                                                             | how many tokens are distributed as a reward per second                       |
+| reward\__root\_address_   | 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1 | root address of the certain reward token                                     |
+| reward\__token\_scale_    | 9                                                                  | number used for scaling the reward amount                                    |
+| right\_address            | 0:f2679d80b682974e065e03bf42bbee285ce7c587eb153b41d761ebfd954c45e1 | root address of the right currency in the pool                               |
+| right\_balance            | 815476.108391363066                                                | total balance of the left currency in the pool                               |
+| right\_currency           | BRIDGE                                                             | symbol of the right currency                                                 |
+| share                     | 0                                                                  | amount of tokens user shared for contribution to the pool                    |
+| share\_change             | 0                                                                  | share change in percentage in the last 24h                                   |
+| token\__root\_address_    | 0:5c66f770d439212181bb6f62714bc235f754653ad9e2aca5a685ff7979174ea2 | address of the liquidity pool                                                |
+| token\__root\_scale_      | 9                                                                  | number used for scaling the lp token amount                                  |
+| _token\_root\_currency_   | FLATQUBE-LP-WEVER-BRIDGE                                           | name of the liquidity pool                                                   |
+| tvl                       | 17826322.032214433830                                              | total value locked (TVL) in that pool                                        |
+| tvl\_change               | 1.54                                                               | TVL change in last 24h                                                       |
+| user\__token\_balance_    | 0                                                                  | lp token balance of the user that is sharing his account on FlatQube         |
+| user\__usdt\_balance_     | 0                                                                  | balance of the user that is sharing his account on FlatQube in USDT          |
 
