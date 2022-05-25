@@ -66,9 +66,31 @@ Body required. Data used for postman tests:
 
 ### Response field explanation
 
-| Field name                | Example value | Comment |
-| ------------------------- | ------------- | ------- |
-| **favorite\_pools\_info** |               |         |
-|                           |               |         |
-|                           |               |         |
+| Field name                | Example value | Comment                                                                   |
+| ------------------------- | ------------- | ------------------------------------------------------------------------- |
+| Pools\_info               |               | list of all available pools with following info                           |
+| favorite\_pools\_info     |               | list of all the farming pools user marked as favorite with following info |
+| apr                       |               | Annual Percentage Rate                                                    |
+| apr\_change               |               | APR change in the last 24h                                                |
+| farm\_end\_time           |               | date time in UNIX format when does the farming in a certain pool end      |
+| farm\_start\_time         |               | date time in UNIX format when did the farming in a certain pool start     |
+| is\_active                |               | true if the pool is active, false if not                                  |
+| is\_low\_balance          |               | true if the balance is low, false if not                                  |
+| left\_address             |               | root address of the left currency in the pool                             |
+| left\_currency            |               | symbol of the left currency (ie. WEVER)                                   |
+| pool\_address             |               | address of the current pool                                               |
+| pool\_owner\_address      |               | address of the user that created the pool                                 |
+| reward\_token\_root\_info |               | list of reward tokens with following info about them                      |
+| reward\_currency          |               | symbol of the reward token                                                |
+| reward\_root\_address     |               | root address of the certain reward token                                  |
+| reward\_scale             |               | multiply reward amount with this value to get the right amount            |
+| right\_address            |               | root address of the right currency in the pool                            |
+| right\_currency           |               | symbol of the right currency (ie. BRIDGE)                                 |
+| share                     |               | amount of tokens user shared for contribution to the pool                 |
+| token\_root\_address      |               | address of the liquidity pool                                             |
+| token\_root\_currency     |               | name of the liquidity pool (ie. FLATQUBE-LP-WEVER-BRIDGE)                 |
+| tvl                       |               | total value locked (TVL) in that pool                                     |
+| tvl\_change               |               | TVL change in last 24h (percentage)                                       |
+| user\_token\_balance      |               | balance of the user that is sharing his account on FlatQube               |
+| favorite\_total\_count    |               |                                                                           |
 
