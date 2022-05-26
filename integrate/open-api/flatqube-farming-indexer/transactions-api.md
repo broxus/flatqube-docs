@@ -1,6 +1,6 @@
 # Transactions API
 
-{% swagger method="post" path="/transactions" baseUrl="http://farming.flatqube.io/v1" summary="Transactions data" %}
+{% swagger method="post" path="/transactions" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Transactions data" %}
 {% swagger-description %}
 
 {% endswagger-description %}

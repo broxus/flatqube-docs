@@ -1,6 +1,6 @@
 # Graphics API
 
-{% swagger method="post" path="/graphic/tvl" baseUrl="http://farming.flatqube.io/v1" summary="Farming pool TVL graphic data" %}
+{% swagger method="post" path="/graphic/tvl" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pool TVL graphic data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -65,7 +65,7 @@ Body required. Data used for postman tests:
   })
 ```
 
-{% swagger method="post" path="/graphic/apr" baseUrl="http://farming.flatqube.io/v1" summary="Farming pool APR graphic data" %}
+{% swagger method="post" path="/graphic/apr" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pool APR graphic data" %}
 {% swagger-description %}
 
 {% endswagger-description %}

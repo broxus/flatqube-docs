@@ -1,6 +1,6 @@
 # Farming pools API
 
-{% swagger method="post" path="/farming_pools" baseUrl="http://farming.flatqube.io/v1" summary="Farming pools data" %}
+{% swagger method="post" path="/farming_pools" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pools data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -144,7 +144,7 @@ app.post('/farming_pools', (req, res) => {
   })
 ```
 
-{% swagger method="post" path="/farming_pools/{farming_pool_address}" baseUrl="http://farming.flatqube.io/v1" summary="Farming pool data" %}
+{% swagger method="post" path="/farming_pools/{farming_pool_address}" baseUrl="https://farming-pool-indexer.broxus.com/v1" summary="Farming pool data" %}
 {% swagger-description %}
 
 {% endswagger-description %}
