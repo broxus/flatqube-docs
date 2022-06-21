@@ -113,8 +113,7 @@
     * [Farming pools API](integrate/open-api/flatqube-farming-indexer/farming-pools-api.md)
     * [Transactions API](integrate/open-api/flatqube-farming-indexer/transactions-api.md)
     * [Graphics API](integrate/open-api/flatqube-farming-indexer/graphics-api.md)
-* [Smart contracts](integrate/smart-contracts.md)
-  * [FlatQube Smart contracts](integrate/smart-contracts/flatqube-smartcontracts.md)
+* [Smart contracts](integrate/smart-contracts/README.MD)
     * [DexAccount](integrate/smart-contracts/dex-account.md)
 
 ## ↗ See also
